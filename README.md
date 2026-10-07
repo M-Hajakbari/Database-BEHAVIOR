@@ -102,12 +102,46 @@ The detection task contains one class: **motorcycle**.
 
 ## Repository Contents
 
-### Current Availability
-This repository is the author-controlled project repository for MoBe. A **representative subset of the MoBe dataset, together with sample annotations and documentation**, is intended to be publicly available through the project repository.
+### Public Representative Subset
+This repository provides a **representative public subset** of MoBe. The public subset contains four complete sample clips—two from each camera—with their extracted frames, YOLO-format annotation files, clip-level JSON records, and MP4 videos.
 
-The complete dataset should not be inferred from the files currently present in this repository. The authoritative clip convention is:
-- **V1–V12: Camera 1**
-- **V13–V19: Camera 2**
+| Camera | Public clip | Full-dataset partition | Frames | Annotation files |
+|---|---|---|---:|---:|
+| Camera 1 | V1 | Training | 2,960 | 2,960 |
+| Camera 1 | V2 | Validation | 2,889 | 2,889 |
+| Camera 2 | V13 | Training | 2,430 | 2,430 |
+| Camera 2 | V14 | Validation | 2,594 | 2,594 |
+| **Total** | **4 clips** | — | **10,873** | **10,873** |
+
+The public subset follows the same camera naming used in the manuscript and supplementary material:
+
+```text
+MoBe_Dataset/
+├── camera1/
+│   ├── v1/
+│   │   ├── annotations/
+│   │   ├── frames/
+│   │   ├── v1.json
+│   │   └── V1.mp4
+│   └── v2/
+│       ├── annotations/
+│       ├── frames/
+│       ├── v2.json
+│       └── V2.mp4
+└── camera2/
+    ├── V13/
+    │   ├── annotations/
+    │   ├── frames/
+    │   ├── v13.json
+    │   └── V13.mp4
+    └── V14/
+        ├── annotations/
+        ├── frames/
+        ├── v14.json
+        └── V14.mp4
+```
+
+The authoritative full-corpus clip convention is **V1–V12 = Camera 1** and **V13–V19 = Camera 2**. The complete dataset should not be inferred from the four public sample folders.
 
 ## Full Dataset Availability
 A representative subset of the MoBe dataset, together with sample annotations and documentation, is publicly available at the project repository.
