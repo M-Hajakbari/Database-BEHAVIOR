@@ -148,8 +148,6 @@ A representative subset of the MoBe dataset, together with sample annotations an
 
 The complete dataset comprises **19 video clips, 49,775 annotated frames, 303,389 motorcycle bounding boxes, and 1,193 persistent motorcycle identities**. The complete dataset is **planned for archival release through Zenodo with a persistent DOI**. During peer review, access to the complete dataset can be provided to editors and reviewers upon request for verification purposes.
 
-## Code Availability
-Implementation and evaluation resources associated with this study are available through the project repository. Additional materials required for reproducing the reported experiments can be provided for peer-review purposes upon request.
 
 ## Citation
 If you use MoBe in your research, please cite the associated manuscript when bibliographic details become available:
